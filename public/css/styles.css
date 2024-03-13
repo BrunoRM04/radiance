@@ -131,8 +131,7 @@ header {
     object-fit: cover;
 }
 @media only screen and (max-width: 600px) {
-    .carousel-item {
-        width: 100vw;
+    .carousel-item img{
     }
 }
 /*CARRUSEL FRASES*/
@@ -203,6 +202,13 @@ header {
 @media only screen and (max-width: 768px) {
     .titulo-sector{
         font-size: 20px; /* Puedes ajustar este tamaño según tus necesidades */
+    }
+}
+@media only screen and (max-width: 600px) {
+    .product {
+        width: 150px; /* Reducir el ancho en dispositivos pequeños */
+        margin: 0 5px 20px 5px; /* Reducir los márgenes para separar los elementos */
+        padding: 5px; /* Reducir el relleno */
     }
 }
 /*CARRUSEL PRODUCTOS*/
