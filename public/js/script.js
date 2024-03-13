@@ -1,4 +1,4 @@
-// JSON simulado con algunos productos
+// BUSCADOR
 const products = [
   { 
       name: "Agua Nueva", 
@@ -87,6 +87,7 @@ searchInput.addEventListener("change", () => {
   buscar();
 });
 
+// BUSCADOR
 
 
 
@@ -95,8 +96,7 @@ searchInput.addEventListener("change", () => {
 
 
 
-
-
+// CARRUSEL FRASES
 const carousel = document.getElementById('carousel');
 let counter = 1;
 const size = carousel.children[0].clientWidth;
@@ -129,4 +129,43 @@ carousel.addEventListener('transitionend', () => {
 // Auto mover el carrusel
 setInterval(() => {
   moveCarousel('next');
-}, 9000);
+}, 15000);
+// CARRUSEL FRASES
+
+
+
+
+function togglePlayer() {
+  var player = document.getElementById("musicPlayer");
+  player.style.display = (player.style.display === "none") ? "block" : "none";
+  
+  var bubble = document.querySelector(".bubble");
+  bubble.textContent = (player.style.display === "none") ? "🎵" : "❌";
+  
+  if (player.style.display !== "none") {
+    showComment();
+  }
+}
+
+function showComment() {
+  var comment = document.querySelector(".comment");
+  comment.style.opacity = 1;
+}
+
+function playNext() {
+  var audio = document.querySelector("audio");
+  var sources = audio.getElementsByTagName("source");
+  var nextSource = null;
+
+  for (var i = 0; i < sources.length; i++) {
+    if (sources[i].src !== audio.src) {
+      nextSource = sources[i];
+      break;
+    }
+  }
+
+  if (nextSource) {
+    audio.src = nextSource.src;
+    audio.play();
+  }
+}
