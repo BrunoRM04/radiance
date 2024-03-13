@@ -131,7 +131,9 @@ header {
     object-fit: cover;
 }
 @media only screen and (max-width: 600px) {
-    .carousel-item img{
+    .carousel-item img {
+        width: 120%; /* Aumentar el ancho en dispositivos pequeños */
+        height: auto; /* Restaurar la altura automática */
     }
 }
 /*CARRUSEL FRASES*/
