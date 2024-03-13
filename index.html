@@ -20,11 +20,11 @@
         </div>
         <div class="header-icons">
             <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Buscar...">
-                <div class="search-icon" onclick="buscar()">
-                    <!-- Ícono de búsqueda de Font Awesome -->
-                    <i class="fas fa-search"></i>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar...">
+                    <div id="searchResults" class="search-results"></div>
                 </div>
+                <div id="productsContainer"></div>
             </div>
             <div>
                 <!-- Enlace al perfil del usuario -->
@@ -59,11 +59,12 @@
                 <div class="carousel-item"><img src="./assets/img/imagen10.jpg" alt="Imagen 2"></div>
             </div>
         </div> <!-- carrusel frases -->
+        <div id="searchResults"></div>
         <div class="contenedor-productos">
             <h1 class="titulo-sector">JOYERIA DESTACADA 2024</h1>
             <div class="carousel2">
                 <div class="product">
-                    <img src="producto1.jpg" alt="Producto 1">
+                    <img src="../librosdelpobremundo/assets/img/libros/16 de octubre de 1943.jpg" alt="Agua Nueva">
                     <h2 class="titulo-producto">Producto 1</h2>
                     <p class="price"><del>$20.00</del> <span class="discount">$18.00</span></p>
                     <p class="discount-text"><span style="color: #ffd700;">10%</span> de descuento por compra en la web</p>
