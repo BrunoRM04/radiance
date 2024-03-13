@@ -145,7 +145,7 @@ header {
     font-size: 32px;
 }
 .titulo-producto{
-    color: white;
+    color: black;
 }
 .carousel2 {
     display: flex;
@@ -166,8 +166,8 @@ header {
     border: 2px solid #C0C0C0;
 }
 .product img {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: auto;
     margin-bottom: 10px;
 }
 .price {
@@ -206,6 +206,7 @@ header {
     }
 }
 /*CARRUSEL PRODUCTOS*/
+/*musica*/
 .bubble {
     position: fixed;
     bottom: 20px;
@@ -218,10 +219,8 @@ header {
     z-index: 1000;
     display: flex;
     align-items: center;
-  }
-
-  /* Estilos para el comentario */
-  .comment {
+}
+.comment {
     position: absolute;
     bottom: calc(70%);
     right: 50%;
@@ -233,14 +232,11 @@ header {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     z-index: 1001;
-  }
-
-  .bubble:hover .comment {
+}
+.bubble:hover .comment {
     opacity: 1;
-  }
-
-  /* Estilos para el reproductor de música */
-  #musicPlayer {
+}
+#musicPlayer {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -253,94 +249,81 @@ header {
     max-width: 300px;
     width: 90%;
     overflow: hidden;
-  }
-
-  #musicPlayer p {
+}
+#musicPlayer p {
     margin: 0 0 10px;
     font-weight: bold;
     color: #333;
-  }
-
-  #musicPlayer audio {
+}
+#musicPlayer audio {
     width: 100%;
     display: block;
-  }
-
-  @media (min-width: 768px) {
+}
+@media (min-width: 768px) {
     #musicPlayer {
-      max-width: 400px;
+        max-width: 400px;
     }
-  }
-
-  @media (min-width: 992px) {
+}
+@media (min-width: 992px) {
     #musicPlayer {
-      max-width: 500px;
+        max-width: 500px;
     }
-  }
-
-  @media (min-width: 1200px) {
+}
+@media (min-width: 1200px) {
     #musicPlayer {
-      max-width: 300px;
+        max-width: 300px;
     }
-  }
-
+}
+/*musica*/
+/*FOOTER*/
 footer {
     background-color: #000000;
     color: #C0C0C0;
     padding: 30px 0;
     margin-top: 50px;
-  }
-  
-  .footer {
+}
+.footer {
     width: 100%;
     margin: auto;
-  }
-  
-  .row {
+}
+.row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-  }
-  
-  .col-md-4 {
+}
+.col-md-4 {
     flex: 1;
     text-align: center;
     margin-top: 10px;
-  }
-  
-  .footer ul {
+}
+.footer ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .footer ul li {
+}
+.footer ul li {
     margin-bottom: 10px;
-  }
-  
-  .footer ul li a {
+}
+.footer ul li a {
     color: #fff;
     text-decoration: none;
-  }
-  
-  .social-icons {
+}
+.social-icons {
     list-style: none;
     padding: 0;
-  }
-  
-  .social-icons li {
+}
+.social-icons li {
     display: inline-block;
     margin-right: 10px;
-  }
-  
-  .social-icons li a {
+}
+.social-icons li a {
     color: #C0C0C0;
     font-size: 20px;
     text-decoration: none;
-  }
-  
-  @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
     .col-md-4 {
-      flex: 0 0 100%;
+        flex: 0 0 100%;
     }
-  }
+}
+/*FOOTER*/
