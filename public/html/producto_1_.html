@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radicance | Joyas</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="shortcut icon" href="/assets/img/logo negro.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header> <!-- header -->
+        <div class="logotipo">
+            <img style="max-width: 250px;" src="/assets/img/logo gris.png" alt="Logo">
+        </div>
+        <div class="header-icons">
+            <div class="search-box">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar...">
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+                <div id="productsContainer"></div>
+            </div>
+            <div>
+                <!-- Enlace al perfil del usuario -->
+                <a href="perfil.html">
+                    <!-- Ícono de "Mi cuenta" de Font Awesome -->
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+            <div>
+                <!-- Enlace a la lista de favoritos -->
+                <a href="favoritos.html">
+                    <!-- Ícono de "Favoritos" de Font Awesome -->
+                    <i class="fas fa-heart"></i>
+                </a>
+            </div>
+        </div>
+    </header> <!-- header -->
+    <main>
+        <div class="product-wrapper">
+            <!-- Imagen del producto -->
+            <div class="imagen-producto">
+                <img src="/assets/product/producto1.jpg" alt="Imagen de Producto">
+            </div>
+            <!-- Detalles del producto -->
+            <div class="detalles-individual">
+                <div style="font-size: 30px;" class="titulo-individual">CUBANA DE ORO 45 CM (STOCK)</div>
+                <div style="color: #C0C0C0;" class="info-individual">N° de Artículo: 0001</div>
+                <div style="font-weight: 800; font-size: 26px; color: #ffd700;" class="info-individual">$990</div>
+                <a href="#" class="compra-individual">Comprar</a>
+                <a href="/index.html" class="compra-individual">Volver a inicio</a>
+            </div>
+        </div>
+        <div class="payment-methods-section">
+            <div class="payment-methods">
+                <img src="/assets/img/mastercard.png" alt="Visa">
+                <img src="/assets/img/visa.png" alt="Mastercard">
+                <img src="/assets/img/midinero.png" alt="PayPal">
+                <img src="/assets/img/oca.png" alt="American Express">
+                <img src="/assets/img/redpagos.png" alt="Discover">
+            </div>
+        </div>
+        <div class="shipping-section">
+            <div class="shipping-method">
+                <h3>Envío Gratis Montevideo </h3>
+                <p>Entregas el mismo día de la compra <span style="font-weight: 800;">(si la compra fue hecha antes de las 16 hs)</span>.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Contacto</h3>
+                    <p>Dirección: Montevideo, Uruguay.</p>
+                    <p>Teléfono: +598 92 493 252</p>
+                    <p>Email: radianceuruguay@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Redes Sociales</h3>
+                    <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/public/js/script.js"></script>
+</body>
+
+</html>

@@ -1,32 +1,14 @@
 // BUSCADOR
 const products = [
   { 
-      name: "Agua Nueva", 
+      name: "Cubana Oro 45cm", 
       style: "joya", 
-      image: "./assets/img/imagen13.jpg", 
-      price: 18.00,
-      html: "producto_agua_nueva.html" // Este es el nombre del archivo HTML para el producto "Agua Nueva"
+      image: "./assets/product/producto1.jpg", 
+      price: 990,
+      html: "producto_1_.html" // Ruta al archivo HTML del producto
   },
-  { 
-      name: "Brillo Estelar", 
-      style: "otro-estilo", 
-      image: "./assets/img/brillo_estelar.jpg", 
-      price: 25.00,
-      html: "producto_brillo_estelar.html" // Este es el nombre del archivo HTML para el producto "Brillo Estelar"
-  },
-  { 
-    name: "Cubana Oro", 
-    style: "otro-estilo", 
-    image: "./assets/img/brillo_estelar.jpg", 
-    price: 25.00,
-    html: "producto_cubana_oro.html" // Este es el nombre del archivo HTML para el producto "Brillo Estelar"
-},
-  // Otros productos aquí
+  // Agrega más productos según sea necesario
 ];
-
-const searchInput = document.getElementById("searchInput");
-const searchResults = document.getElementById("searchResults");
-const productsContainer = document.getElementById("productsContainer");
 
 // Función para buscar productos
 function buscar() {
@@ -82,11 +64,6 @@ searchInput.addEventListener("input", () => {
   buscar();
 });
 
-// Evento de cambio en el campo de búsqueda
-searchInput.addEventListener("change", () => {
-  buscar();
-});
-
 // BUSCADOR
 
 
@@ -98,39 +75,3 @@ searchInput.addEventListener("change", () => {
 
 
 
-
-
-function togglePlayer() {
-  var player = document.getElementById("musicPlayer");
-  player.style.display = (player.style.display === "none") ? "block" : "none";
-  
-  var bubble = document.querySelector(".bubble");
-  bubble.textContent = (player.style.display === "none") ? "🎵" : "❌";
-  
-  if (player.style.display !== "none") {
-    showComment();
-  }
-}
-
-function showComment() {
-  var comment = document.querySelector(".comment");
-  comment.style.opacity = 1;
-}
-
-function playNext() {
-  var audio = document.querySelector("audio");
-  var sources = audio.getElementsByTagName("source");
-  var nextSource = null;
-
-  for (var i = 0; i < sources.length; i++) {
-    if (sources[i].src !== audio.src) {
-      nextSource = sources[i];
-      break;
-    }
-  }
-
-  if (nextSource) {
-    audio.src = nextSource.src;
-    audio.play();
-  }
-}
