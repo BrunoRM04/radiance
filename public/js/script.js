@@ -3,9 +3,9 @@ const products = [
   { 
       name: "Cubana Oro 45cm", 
       style: "joya", 
-      image: "./assets/product/producto1.jpg", 
+      image: "./product/producto1.jpg", 
       price: 990,
-      html: "producto_1_.html" // Ruta al archivo HTML del producto
+      html: "./product/producto_1_.html" // Ruta al archivo HTML del producto
   },
   // Agrega más productos según sea necesario
 ];
